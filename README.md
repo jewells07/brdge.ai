@@ -17,23 +17,11 @@ Open and run **top to bottom**:
 
 ## API keys
 
-Do not commit keys. Copy the example files, then fill in values:
-
-- `assignment-a/.env.example` → `assignment-a/.env`
-- `assignment-b/.env.example` → `assignment-b/.env`
-
-**Assignment A** — `assignment-a/.env`:
+Do not commit keys. Copy [`.env.example`](.env.example) to `.env` at the repo root, then fill in values. Both notebooks load that file whether you run them from the root or from `assignment-a/` / `assignment-b/`.
 
 ```env
 OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4o-mini
-OFFLINE_MODE=false
-```
-
-**Assignment B** — `assignment-b/.env` (also reads `assignment-a/.env` if present):
-
-```env
-OPENAI_API_KEY=
 OFFLINE_MODE=false
 RAVELRY_ACCESS_KEY=
 RAVELRY_PERSONAL_KEY=
